@@ -4,9 +4,11 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
+import thunk from "redux-thunk";
+
 import reducers from "./reducers";
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style/main.scss";
@@ -28,3 +30,5 @@ function main() {
 		document.querySelector(".app-wrapper")
 	);
 }
+
+document.addEventListener("DOMContentLoaded", main);

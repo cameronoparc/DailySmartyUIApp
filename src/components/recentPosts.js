@@ -1,6 +1,14 @@
 import React, { Component } from "react";
 
-class SearchBar extends Component {
+import { connect } from "react-redux";
+
+import * as actions from "../actions";
+
+class RecentPosts extends Component {
+	ComponentDidMount() {
+		this.props.fetchRecentPosts();
+	}
+
 	render() {
 		return (
 			<div className="recent-posts">
@@ -17,4 +25,4 @@ class SearchBar extends Component {
 	}
 }
 
-export default SearchBar;
+export default connect(null, actions)(RecentPosts);
