@@ -1,4 +1,11 @@
 .logo-main {
-	width: 105px;
-	height: 105px;
+	display: grid;
+	align-content: space-around;
+	justify-content: center;
+	height: 350px;
+
+	.img {
+		width: 105px;
+		height: 105px;
+	}
 }
