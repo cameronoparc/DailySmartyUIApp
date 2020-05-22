@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
-class RecentPosts extends Component {
+class SearchBar extends Component {
 	render() {
 		return (
 			<div className="recent-posts">
 				<div className="recent-posts__wrapper">
-					<div className="recent-posts__heading">Recent Posts </div>
+					<div className="recent-posts__heading">Recent Posts</div>
 					<ul className="recent-posts__posts">
 						<li>recent post 0</li>
 						<li>recent post 1</li>
@@ -17,4 +17,4 @@ class RecentPosts extends Component {
 	}
 }
 
-export default RecentPosts;
+export default SearchBar;
